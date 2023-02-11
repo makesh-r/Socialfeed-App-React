@@ -1,0 +1,251 @@
+.shareContainer {
+    width: 700px;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0px  1px 10px #8f8d8f;
+    transition: .3s ease;
+}
+
+.shareWrapper {
+    width: 100%;
+}
+
+.shareTop {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 10px;
+    // margin-bottom: 10px;
+}
+
+.shareImgHolder {
+    flex: 1;
+}
+
+.shareImg {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+.shareTextHolder {
+    margin-top: 5px;
+    flex: 11;
+}
+
+.shareCenter {
+    width: 100%;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.shareText {
+    width: 95%;
+    padding: 8px 5px;
+    border: none;
+    border-radius: 12px;
+    background-color: #eee;
+    resize: none;
+}
+
+.send-icon {
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.send-icon:hover{
+    color: #99038D;
+    transform: scale(1.5);
+}
+.shareBottom {
+    width: 95%;
+    display: flex;
+    row-gap: 15px;
+    justify-content: space-between;
+    padding: 5px;
+    // margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.shareFiles {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.openAttachment, .openCamera, .openMic {
+    position: relative;
+    transition: .3s ease;
+}
+
+.attachedFiles {
+    max-width: 30px;
+}
+
+.attachedFiles1 {
+    width: 150px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.shareFilesIcon {
+    margin-right: 5px;
+}
+
+.cameraHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.captured-image{
+    width: 300px;
+    height: 300px;
+}
+.cameraBtnHolder {
+    display: flex;
+    column-gap: 15px;
+    margin-top: 15px;
+}
+
+.cameraBtn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: .3s ease;
+
+}
+
+.cameraBtn:hover{
+    background-color: #99038D;
+    color: #fff;
+    transform: scale(1.1);
+}
+.micHolder {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.audioHolder {
+    width: 100%;
+}
+
+.micBtnHolder {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.micBtn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.micBtn:hover{
+    background-color: #99038D;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.closeMic{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.closeMic:hover{
+    transform: scale(1.8);
+    color: #99038D;
+}
+.openAttachment:hover{
+    transform: scale(1.2);
+    color: #99038D;
+}
+.openCamera:hover{
+    color: #99038D;
+    transform: scale(1.2);
+}
+.openMic:hover{
+    color: #99038D;
+    transform: scale(1.2);
+}
+.previewImage {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.audio1{
+    width: 100px;
+    height: 30px;
+}
+@media screen and (max-width:1280px) {
+    .shareContainer {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .shareContainer {
+        width: 450px;
+    }
+
+    .shareBottom {
+        row-gap: 5px;
+    }
+
+    .shareImg {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .shareContainer {
+        width: 400px;
+        font-size: 15px;
+
+    }
+}
+
+@media screen and (max-width:480px) {
+    .shareContainer {
+        width: 300px;
+    }
+    .shareBottom{
+        flex-direction: column;
+
+    }
+}
+
+@media screen and (max-width:320px) {
+    .shareContainer {
+        width: 250px;
+    }
+}

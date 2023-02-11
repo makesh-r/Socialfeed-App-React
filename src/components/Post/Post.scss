@@ -1,0 +1,150 @@
+.postContainer{
+    width: 700px;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 50px;
+    transition: .3s ease;
+    box-shadow: 0px  1px 10px #8f8d8f;
+}
+
+.postWrapper{
+    width: 100%;
+}
+
+.postTop{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.postProfile{
+    display: flex;
+}
+.postProfileImgHolder{
+    margin-right: 5px;
+}
+.postProfileImg{
+    width: 55px;
+    height: 55px;
+    border: 3px solid #d419c5;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.postProfileName{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.postEdit{
+    display: flex;
+    column-gap: 5px;
+}
+.postEditIcon{
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: .3s ease;
+}
+.postEditIcon:hover{
+    color: #99038D;
+    transform: scale(1.5);
+}
+.postEditBtn{
+    border: none;
+    margin-bottom: 10px;
+}
+.postBottom{
+    padding: 15px;
+}
+
+.postTextContainer{
+    background-color: #eee;
+    border-radius: 15px;
+    width: 100%;
+    padding: 10px;
+    word-break: break-word;
+}
+
+.postImageContainer{
+    width: 100%;
+    padding: 10px;
+}
+.postAudioContainer{
+    margin-bottom: 15px;
+}
+.postAttachment{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border: none;
+}
+
+.postImage{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.audio{
+    width: 100%;
+}
+
+.warn-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 40px;
+}
+
+.warn-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.warn-button{
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: .3s ease;
+}
+
+.warn-button:hover{
+    background-color: #99038D;
+    color: #fff;
+    transform: scale(1.2);
+}
+.postContainer:hover{
+    transform: scale(1.03);
+}
+@media screen and (max-width:1280px) {
+    .postContainer{
+        width: 600px;
+    }
+}
+@media screen and (max-width:990px) {
+    .postContainer{
+        width: 450px;
+    }
+}
+@media screen and (max-width:768px) {
+    .postContainer{
+        width: 400px;
+    }
+}
+@media screen and (max-width:480px) {
+    .postContainer{
+        width: 300px;
+    }
+}
+@media screen and (max-width:320px) {
+    .postContainer {
+        width: 250px;
+    }
+}

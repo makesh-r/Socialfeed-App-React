@@ -1,0 +1,94 @@
+.sideBarContainer{
+    height: calc(100vh - 65px);
+    margin-top: 5px;
+    background-color: #ffffff;
+    overflow-y: scroll;
+    float: left;
+    width: 250px;
+    z-index: 10;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+li{
+    list-style-type: none;
+}
+.sideBarButtonHolder{
+    margin: 25px;
+}
+.sideBarButton{
+    width: 100%;
+    padding: 8px;
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btnIcon{
+    margin-left: 7px;
+}
+
+.sideBarProfile{
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+}
+.profileImgHolder{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+.profileImg{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.profileName{
+    display: flex;
+    align-items: center;
+}
+.sideBarText{
+    margin-left: 25px;
+}
+
+#non{
+    display: none;
+}
+#yes{
+    display: block;
+}
+#non1{
+    display: none;
+}
+#yes1{
+    display: block;
+}
+.side-link{
+    color: #000;
+    text-decoration: none;
+}
+@media screen and (max-width:768px) {
+    .sideBarContainer{
+        position: fixed;
+        right: 0;
+        top: 65px;
+        margin-top: 0;
+    }
+    #hamyes{
+        display: block;
+    }
+    #hamno{
+        display: none;
+    }
+}

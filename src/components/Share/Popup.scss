@@ -1,0 +1,42 @@
+
+.closeIcon{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.closeIcon:hover{
+    transform: scale(1.9);
+    color: #99038D;
+}
+
+.modalCenter{
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    padding: 20px 0;
+    padding: 20px 40px;
+}
+
+.modalBtn{
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.modalBtn:hover{
+    background-color: #99038D;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.modalBottom{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+
+}

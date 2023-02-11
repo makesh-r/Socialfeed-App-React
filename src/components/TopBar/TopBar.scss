@@ -1,0 +1,55 @@
+$myColor:red;
+$backGroundColor:#fff;
+h1{
+    color: $myColor;
+}
+
+.topBarContainer{
+    width: 100%;
+    height: 60px;
+    background-color: $backGroundColor;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.topBarWrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+.topBarLeft{
+    display: flex;
+    align-items: center;   
+}
+.topBarBack{
+    margin: 0 20px;
+}
+.topBarText1{
+    margin-right: 5px;
+    color: #888;
+} 
+.topBarForward{
+    margin-right: 5px;
+    font-size: 10px;
+}
+
+.topBarRight{
+    margin-right: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+    display: none;
+}
+
+.topBarRight:hover{
+    color: #99038D;
+    transform: scale(1.8);
+}
+
+@media screen and (max-width:768px) {
+    .topBarRight{
+        display: block;
+    }
+}
